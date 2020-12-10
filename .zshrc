@@ -35,7 +35,7 @@ source ~/.oh-my-zsh/plugins/alias-tips/alias-tips.plugin.zsh
 ############
 # init env #
 ############
-export PATH=.:/home/jhleeeme/Project/bin:$PATH
+export PATH=.:$HOME/bin:$PATH
 
 #########
 # alias #
