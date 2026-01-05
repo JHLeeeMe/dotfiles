@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=aka.ms
+
+properties:
+  resources:
+    # Git
+    - resource: Microsoft.WinGet.Source/winget
+      directives:
+        description: 최신 버전의 Git을 설치합니다.
+        allowPrerelease: true
+      settings:
+        id: Git.Git
+        source: winget
+
+    # 2. VSCode
+    - resource: Microsoft.WinGet.Source/winget
+      directives:
+        description: VS Code 에디터를 설치합니다.
+      settings:
+        id: Microsoft.VisualStudioCode
+        source: winget
+
+    # 3. Docker Desktop
+    - resource: Microsoft.WinGet.Source/winget
+      directives:
+        description: Docker Desktop을 설치합니다.
+      settings:
+        id: Docker.DockerDesktop
+        source: winget
+
+  configurationVersion: 0.2
